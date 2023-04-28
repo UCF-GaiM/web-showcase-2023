@@ -57,7 +57,11 @@
     .col-x-sm {
       flex: 0 0 0%;
     }
-
+    @media(min-width: 1200px) {
+        #ucfhb-inner {
+            width:1140px
+        }
+    }
     #ucfhb-logo a {
       background-image: url(https://universityheader.ucf.edu/bar/img/spritesheet-v2.png);
       background-repeat: no-repeat;
@@ -93,7 +97,6 @@
       display: block !important;
       margin: auto;
       position: relative;
-      width: 940px;
       z-index: 1000;
     }
     #ucfhb-left {
@@ -174,7 +177,7 @@
 
 <body>
   <nav class="navbar navbar-inverse navbar-expand-lg ">
-    <div class="ucfb-inner navbar-inner">
+    <div id="ucfhb-inner" class="navbar-inner">
         <div id="ucfhb-left">
           <div id="ucfhb-logo">
             <a href="https://www.ucf.edu" aria-label="University of Central Florida"></a>
